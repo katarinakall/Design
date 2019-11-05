@@ -2,4 +2,4 @@ My me/report
 ===================
 
 This is an exercise for the class "Teknisk webbdesign och användbarhet"
-given at BTH. 
+given by BTH. 
