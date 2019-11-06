@@ -103,6 +103,10 @@ a {
     margin-bottom: 72px;
 }
 
+.article > p {
+    margin: revert;
+}
+
 .figure.right {
     float: right;
     padding-left: 20px;
