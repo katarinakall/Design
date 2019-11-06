@@ -82,6 +82,11 @@ a {
 
 /* Main */
 
+main {
+    min-height: 30em;
+}
+
+
 .inner-wrap-main {
     padding: 30px 0;
 }
