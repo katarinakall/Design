@@ -25,7 +25,7 @@
 /* Container */
 .wrap-all {
     background-color: white;
-    overflow-y: scroll;
+    margin: 0 auto;
 }
 
 .outer-wrap {
@@ -43,6 +43,10 @@
 }
 
 /* Header */
+
+.region-flash {
+    overflow-x: hidden;
+}
 
 .region-header-col-1 {
     float: left;
@@ -81,6 +85,10 @@ a {
 }
 
 /* Main */
+
+html {
+    overflow-y: scroll;
+}
 
 main {
     min-height: 30em;
@@ -135,6 +143,12 @@ main {
 .outer-wrap-footer {
     background-color: #303030;
     color: white;
+}
+
+.footer-column {
+    width: 33%;
+    float: left;
+    padding: 10px;
 }
 
 .inner-wrap-footer {
