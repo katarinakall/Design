@@ -1,0 +1,141 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+
+
+/**
+ * General layout
+ */
+
+/* Hide submenu, leave this to kmom02 */
+.rm-desktop ul {
+    display: none;
+}
+
+/* Hide responsive/mobile menu, leave this to kmom02 */
+.rm-navbar-max {
+    display: none;
+}
+
+.outer-wrap {
+    width: 100%;
+    overflow: auto;
+}
+
+.inner-wrap {
+    max-width: 1100px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row::after {
+    clear: both;
+}
+
+/* Header */
+
+.region-flash {
+    overflow-x: hidden;
+}
+
+.region-header-col-1 {
+    float: left;
+    width: 30%;
+    margin-right: 10px;
+}
+
+.region-header-col-2 {
+    float: left;
+    width: 60%;
+}
+
+.site-logo {
+    display: none;
+}
+
+.site-logo-text{
+    font-size: 28px;
+}
+
+.my-navbar {
+    padding-top: 10px;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.my-navbar li {
+    display: inline;
+    padding: 2px 10px;
+}
+
+/* Main */
+.inner-wrap-main {
+    padding: 30px 0;
+}
+
+.wrap-sidebar.region-sidebar-left.has-sidebar-left.has-sidebar {
+    float: left;
+    width: 30%;
+}
+
+.region-main.has-sidebar-left.has-sidebar {
+    float: left;
+    width: 70%
+}
+
+/* Content */
+.article {
+    font-size: 18px;
+    overflow: auto;
+    margin-bottom: 72px;
+}
+
+.article > p {
+    margin: revert;
+}
+
+.figure.right {
+    float: right;
+    padding-left: 20px;
+}
+
+/* Byline */
+.site-byline {
+    overflow: auto;
+    border: solid 1px black;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+}
+
+.figure.left {
+    float: left;
+    margin-right: 8px;
+}
+
+/* Footer */
+.outer-wrap-footer {
+    background-color: #303030;
+    color: white;
+}
+
+.footer-column {
+    width: 33%;
+    float: left;
+    padding: 10px;
+}
+
+.inner-wrap-footer {
+    padding: 30px 0;
+}
+
+.region-footer>.block {
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+}
