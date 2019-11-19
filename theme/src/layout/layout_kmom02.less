@@ -12,18 +12,8 @@
  * General layout
  */
 
-/* Hide submenu, leave this to kmom02 */
-// .rm-desktop ul {
-//     display: none;
-// }
-
-/* Hide responsive/mobile menu, leave this to kmom02 */
-// .rm-navbar-max {
-//     display: none;
-// }
-
 .inner-wrap {
-    max-width: 1100px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -74,20 +64,38 @@
 }
 
 
-/* Main */
+/* Main and sidebars */
 .inner-wrap-main {
-    padding: 30px 0;
+    .clearfix();
 }
 
-.wrap-sidebar.region-sidebar-left.has-sidebar-left.has-sidebar {
+.region-main {
+    width: 100%;
     float: left;
+    .clearfix();
+
+    &.has-sidebar {
+        width: 70%;
+    }
+
+    &.has-sidebar-left.has-sidebar-right {
+        width: 60%;
+    }
+}
+
+.region-sidebar-left,
+.region-sidebar-right {
     width: 30%;
+    float: left;
 }
 
-.region-main.has-sidebar-left.has-sidebar {
+.region-sidebar-left.has-sidebar-right,
+.region-sidebar-right.has-sidebar-left {
+    width: 20%;
     float: left;
-    width: 70%
 }
+
+
 
 /* Content */
 .article {
@@ -96,13 +104,8 @@
     margin-bottom: 72px;
 }
 
-.article > p {
-    margin: revert;
-}
-
 .figure.right {
     float: right;
-    padding-left: 20px;
 }
 
 /* Byline */
