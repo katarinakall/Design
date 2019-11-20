@@ -5055,6 +5055,7 @@ img {
 }
 .my-navbar > li > ul {
   background-color: #ddd;
+  opacity: 0.8;
 }
 /* Main and sidebars */
 .inner-wrap-main::after {
