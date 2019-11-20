@@ -4987,12 +4987,12 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  */
 html {
   overflow-y: scroll;
-  background-color: #333;
+  background-color: #303030;
 }
 body {
   margin: 0;
   padding: 0;
-  color: #333;
+  color: #303030;
   background-color: #ddd;
   font: 100.01%/1 serif;
 }
@@ -5053,6 +5053,9 @@ img {
   font-size: 20px;
   display: inline;
 }
+.my-navbar > li > ul {
+  background-color: #ddd;
+}
 /* Main and sidebars */
 .inner-wrap-main::after {
   content: "";
@@ -5097,13 +5100,25 @@ img {
 .site-byline {
   overflow: auto;
   border: solid 1px black;
-  padding: 10px;
   background-color: white;
-  margin: 10px;
+  position: relative;
 }
-.figure.left {
+.byline-presentation {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+.byline-name {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+.left {
   float: left;
-  margin-right: 8px;
+}
+.left > figcaption {
+  margin-top: -20px;
+  font-style: oblique;
 }
 /* Footer */
 .outer-wrap-footer {
@@ -5113,14 +5128,9 @@ img {
 .footer-column {
   width: 33%;
   float: left;
-  padding: 10px;
+  padding-bottom: 20px;
 }
-.inner-wrap-footer {
-  padding: 30px 0;
-}
-.region-footer > .block {
-  padding-top: 30px;
-  width: 100%;
+.site-footer {
   text-align: center;
 }
 /**
