@@ -12,9 +12,10 @@
  * General layout
  */
 
-.inner-wrap {
+.inner-wrap-main {
     max-width: 800px;
     margin: 0 auto;
+    .clearfix();
 }
 
 .row::after {
@@ -43,6 +44,10 @@
     float: left;
 }
 
+.region-flash {
+    text-align: center;
+}
+
 .site-logo {
     display: none;
 }
@@ -65,10 +70,6 @@
 }
 
 /* Main and sidebars */
-.inner-wrap-main {
-    .clearfix();
-}
-
 .region-main {
     width: 100%;
     float: left;
@@ -94,8 +95,6 @@
     width: 20%;
     float: left;
 }
-
-
 
 /* Content */
 .article {
