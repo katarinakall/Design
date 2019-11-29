@@ -5490,12 +5490,21 @@ img {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
 }
+.region-main.has-sidebar-left {
+  display: inline;
+  float: left;
+  width: 69.79166667%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  margin-left: 4.6875%;
+}
 .region-main.has-sidebar-left.has-sidebar-right {
   display: inline;
   float: left;
-  width: 57.29166667%;
+  width: 48.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
+  margin-left: 4.6875%;
 }
 .region-sidebar-left,
 .region-sidebar-right {
@@ -5515,6 +5524,9 @@ img {
   width: 19.79166667%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
+}
+.region-sidebar-right.has-sidebar-left.has-sidebar-right.has-sidebar {
+  margin-left: 4.6875%;
 }
 /**
 * Responsive 1, 2, 3

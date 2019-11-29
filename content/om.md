@@ -23,4 +23,4 @@ Kursen Teknisk webbdesign och användbarhet, a.k.a. design, lär webbprogrammera
 
 Kursen syftar till en orientering inom områden design och användbarhet, specifikt för tillämpningsområdet webb. Kursen har tekniken som utgångspunkt, där olika tekniker introduceras och används för att underlätta webbdesign och användbarhet för webbplatsen med syftet att skapa en korrekt och användarvänlig webbplats.
 
-[FIGURE class="figure right" src=image/bth.jpg?w=300 caption="Flygfoto av Blekinge Tekniska Högskola."]
+[FIGURE class="figure" src=image/bth.jpg?w=300 caption="Flygfoto av Blekinge Tekniska Högskola."]

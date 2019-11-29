@@ -103,9 +103,14 @@
         #desinax-vgrid.column(@columns * 3 / 4 - 1);
     }
 
+    &.has-sidebar-left {
+        #desinax-vgrid.column(@columns * 3 / 4 - 1);
+        #desinax-vgrid.push(1);
+    }
+
      &.has-sidebar-left.has-sidebar-right {
-         #desinax-vgrid.column(@columns - 10);
-        // width: 60%;
+         #desinax-vgrid.column(@columns - 12);
+         #desinax-vgrid.push(1);
      }
  }
 
@@ -122,6 +127,12 @@
  .region-sidebar-right.has-sidebar-left {
      #desinax-vgrid.column(@columns * 1 / 4 - 1);
  }
+
+ .region-sidebar-right.has-sidebar-left.has-sidebar-right.has-sidebar {
+     #desinax-vgrid.push(1);
+ }
+
+
 
 /**
 * Responsive 1, 2, 3
