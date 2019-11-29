@@ -1,0 +1,152 @@
+/**
+ * Layout style using vgrid.
+ */
+
+/**
+ * Variables
+ */
+
+
+/**
+ * General layout
+ */
+.row {
+    #desinax-vgrid.row();
+    //background-color: #0f0;
+    margin-bottom: 12px;
+}
+
+.inner-wrap {
+    #desinax-vgrid.grid(1100px);
+}
+
+.vgrid .inner-wrap {
+    @gridImage: "../img/grid_24x30x10-nomargin.png";
+    //@gridImage: "../../img/grid_12x60x20-nomargin.png";
+    #desinax-vgrid.showGrid(@gridImage, 1100px);
+
+    &.inner-wrap-header,
+    &.inner-wrap-footer {
+        #desinax-vgrid.showGrid(@gridImage);
+    }
+}
+
+ /* Header */
+ .inner-wrap-header .row {
+     max-width: 100%;
+ }
+
+ .inner-wrap-header {
+    #desinax-vgrid.grid(100%);
+ }
+
+.region-header-col-1,
+.region-header-col-3 {
+    #desinax-vgrid.column(5);
+ }
+
+ .region-header-col-2 {
+    #desinax-vgrid.column(14);
+ }
+
+ .region-flash {
+     #desinax-vgrid.column(@columns);
+ }
+
+ .site-logo {
+     display: none;
+ }
+
+ .site-logo-text a {
+     color: black;
+     font-weight: bold;
+     text-decoration: none;
+ }
+
+ .my-navbar {
+     display: inline;
+ }
+
+ .my-navbar > li > ul {
+     background-color: #ddd;
+     opacity: 0.8;
+ }
+
+ .region-breadcrumb {
+     #desinax-vgrid.column(@columns);
+ }
+
+ /* Main and sidebars */
+ .region-main {
+     #desinax-vgrid.column(18);
+
+     &.has-sidebar {
+        // width: 70%;
+     }
+
+     &.has-sidebar-left.has-sidebar-right {
+        // width: 60%;
+     }
+ }
+
+ .region-sidebar-left,
+ .region-sidebar-right {
+     #desinax-vgrid.column(6);
+ }
+
+ .region-sidebar-left.has-sidebar-right,
+ .region-sidebar-right.has-sidebar-left {
+ }
+
+ /* Content */
+ .article {
+     .clearfix;
+ }
+
+.right {
+    float: right;
+ }
+
+ /* Byline */
+ .author-byline {
+     .clearfix;
+     border: solid 1px black;
+     background-color: white;
+     //position: relative;
+ }
+
+ .byline-presentation {
+    // position: absolute;
+    // top: 10%;
+    // left: 20%
+ }
+
+ .byline-name {
+     color: black;
+     font-weight: bold;
+     text-decoration: none;
+ }
+
+ .left {
+     float: left;
+ }
+
+ .left>figcaption {
+    // margin-top: -20px;
+     font-style: oblique;
+ }
+
+ /* Footer */
+ .outer-wrap-footer {
+     background-color: #303030;
+     color: white;
+ }
+
+ .footer-column {
+     #desinax-vgrid.column(@columns / 3);
+ }
+
+ .site-footer {
+     #desinax-vgrid.column(@columns);
+
+ }
