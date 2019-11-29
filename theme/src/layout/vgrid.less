@@ -18,6 +18,7 @@
 
 .inner-wrap {
     #desinax-vgrid.grid(1100px);
+    margin-bottom: @magicNumber;
 }
 
 .vgrid .inner-wrap {
@@ -47,6 +48,7 @@
 
  .region-header-col-2 {
     #desinax-vgrid.column(14);
+    text-align: center;
  }
 
  .region-flash {
@@ -76,35 +78,90 @@
      #desinax-vgrid.column(@columns);
  }
 
- /* Main and sidebars */
- .region-main {
-     #desinax-vgrid.column(18);
+ .next,
+ .previous {
+     #desinax-vgrid.column(@columns / 4);
 
-     &.has-sidebar {
+ }
+
+ .previous {
+     #desinax-vgrid.push(12);
+     text-align: right;
+}
+
+ /* Main and sidebars */
+.region-main {
+    #desinax-vgrid.column(@columns * 3 / 4);
+    #desinax-vgrid.push(3);
+
+    &.has-sidebar {
+        #desinax-vgrid.push(0);
         // width: 70%;
-     }
+    }
+
+    &.has-sidebar-right {
+        #desinax-vgrid.column(@columns * 3 / 4 - 1);
+    }
 
      &.has-sidebar-left.has-sidebar-right {
+         #desinax-vgrid.column(@columns - 10);
         // width: 60%;
      }
  }
 
- .region-sidebar-left,
+.region-sidebar-left,
+.region-sidebar-right {
+    #desinax-vgrid.column(@columns * 1 / 4);
+}
+
  .region-sidebar-right {
-     #desinax-vgrid.column(6);
+     #desinax-vgrid.push(1);
  }
 
  .region-sidebar-left.has-sidebar-right,
  .region-sidebar-right.has-sidebar-left {
+     #desinax-vgrid.column(@columns * 1 / 4 - 1);
  }
+
+/**
+* Responsive 1, 2, 3
+*/
+
+@media screen and (max-width: 1000px) {
+    .region-main {
+    #desinax-vgrid.column(@columns);
+
+        &.has-sidebar-left.has-sidebar-right {
+            #desinax-vgrid.column(@columns);
+        }
+    }
+    .region-sidebar-left {
+        #desinax-vgrid.column(@columns);
+    }
+    .region-sidebar-left.has-sidebar-right,
+    .region-sidebar-right.has-sidebar-left {
+        #desinax-vgrid.column(@columns);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .region-main.has-sidebar-right {
+    #desinax-vgrid.column(@columns);
+    }
+    .region-sidebar-right {
+        #desinax-vgrid.column(@columns);
+        #desinax-vgrid.push(0);
+    }
+}
 
  /* Content */
  .article {
      .clearfix;
+     margin-bottom: @magicNumber;
  }
 
 .right {
-    float: right;
+   float: right;
  }
 
  /* Byline */
@@ -148,5 +205,6 @@
 
  .site-footer {
      #desinax-vgrid.column(@columns);
+     text-align: center;
 
  }

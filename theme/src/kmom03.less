@@ -51,13 +51,11 @@
 @import "@desinax/typographic-grid/less/typography-font-families.less";
 @import "@desinax/typographic-grid/less/typography-defaults.less";
 
-// Activate the grid base font
-body {
-    #desinax-hgrid.font(@fontSizeBody);
+// Show the grid
+.hgrid .inner-wrap {
+    @gridImage: "../img/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
 }
-
-// Activate grid and affect all typographic elements.
-#desinax-hgrid.activateDefaultTypography();
 
 /**
  * Base style to affect HTML elements on a general scale.
@@ -95,3 +93,15 @@ body {
  * My own settings, not currently in their own module.
  */
  @bgColorBody: #ddd;
+
+ // Magic number and base fontsize to hgrid.
+ @magicNumber:  24px;  // 22px
+ @fontSizeBody: 16px;
+
+ @import url('https://fonts.googleapis.com/css?family=Oswald|Source+Sans+Pro&display=swap');
+
+ // Adapt the typographic grid to my style
+ // Set font family to use
+@fontFamilyHeadings:  'Oswald', sans-serif; //@fontFamilyCambria; //"serif";
+@fontFamilyBody:      'Source Sans Pro', sans-serif; //@fontFamilyCalibri; //"sans-serif";
+@fontFamilyCode:      @fontFamilyCourier; //"monospace";
