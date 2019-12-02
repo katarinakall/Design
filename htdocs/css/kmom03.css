@@ -5441,12 +5441,14 @@ img {
   display: none;
 }
 .site-logo-text a {
-  color: black;
+  color: #303030;
   font-weight: bold;
   text-decoration: none;
+  font-size: 2.5rem;
 }
 .my-navbar {
   display: inline;
+  font-size: 1.2rem;
 }
 .my-navbar > li > ul {
   background-color: #ddd;
@@ -5592,8 +5594,8 @@ img {
 }
 /* Byline */
 .author-byline {
-  border: solid 1px black;
-  background-color: white;
+  border: solid 1px #303030;
+  background-color: #ddd;
 }
 .author-byline::after {
   content: "";
@@ -5601,7 +5603,7 @@ img {
   clear: both;
 }
 .byline-name {
-  color: black;
+  color: #303030;
   font-weight: bold;
   text-decoration: none;
 }
@@ -5614,7 +5616,7 @@ img {
 /* Footer */
 .outer-wrap-footer {
   background-color: #303030;
-  color: white;
+  color: colorBody;
 }
 .footer-column {
   display: inline;
@@ -5622,6 +5624,11 @@ img {
   width: 32.29166667%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
+  color: #fff;
+}
+.footer-column-2,
+.footer-column-3 {
+  margin-left: 4.6875%;
 }
 .site-footer {
   display: inline;
@@ -5630,6 +5637,7 @@ img {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
   text-align: center;
+  color: #fff;
 }
 /**
  * Layout for responsive style through media queries.
@@ -5651,6 +5659,23 @@ img {
     padding-right: 0.5em;
   }
 }
+@media screen and (max-width: 1060px) {
+  .rm-desktop a {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .site-logo-text > a {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 880px) {
+  .site-logo-text > a {
+    font-size: 1.5rem;
+  }
+}
 @media screen and (max-width: 850px) {
   .region-header-col-1,
   .region-header-col-3 {
@@ -5660,7 +5685,11 @@ img {
     width: 70%;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
+  .region-header-col-1,
+  .region-header-col-3 {
+    width: 50%;
+  }
   .rm-desktop {
     display: none;
   }
@@ -5692,9 +5721,9 @@ img {
 .regions .region-footer-column-1,
 .regions .region-footer-column-2,
 .regions .region-footer-column-3 {
-  background-color: #b5dce1;
+  background-color: #ddd;
   border: 1px solid #6cbac4;
-  color: #111;
+  color: #303030;
 }
 /**
  * My own settings, not currently in their own module.

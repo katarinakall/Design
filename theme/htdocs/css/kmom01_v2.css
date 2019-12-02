@@ -177,6 +177,23 @@ img {
     padding-right: 0.5em;
   }
 }
+@media screen and (max-width: 1060px) {
+  .rm-desktop a {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .site-logo-text > a {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 880px) {
+  .site-logo-text > a {
+    font-size: 1.5rem;
+  }
+}
 @media screen and (max-width: 850px) {
   .region-header-col-1,
   .region-header-col-3 {
@@ -186,7 +203,11 @@ img {
     width: 70%;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
+  .region-header-col-1,
+  .region-header-col-3 {
+    width: 50%;
+  }
   .rm-desktop {
     display: none;
   }

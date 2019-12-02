@@ -12,7 +12,6 @@
  */
 .row {
     #desinax-vgrid.row();
-    //background-color: #0f0;
     margin-bottom: 12px;
 }
 
@@ -60,17 +59,19 @@
  }
 
  .site-logo-text a {
-     color: black;
+     color: @colorBody;
      font-weight: bold;
      text-decoration: none;
+     font-size: 2.5rem;
  }
 
  .my-navbar {
      display: inline;
+     font-size: 1.2rem;
  }
 
  .my-navbar > li > ul {
-     background-color: #ddd;
+     background-color: @bgColorBody;
      opacity: 0.8;
  }
 
@@ -88,6 +89,7 @@
      #desinax-vgrid.push(12);
      text-align: right;
 }
+
 
  /* Main and sidebars */
 .region-main {
@@ -178,8 +180,8 @@
  /* Byline */
  .author-byline {
      .clearfix;
-     border: solid 1px black;
-     background-color: white;
+     border: solid 1px @colorBody;
+     background-color: @bgColorBody;
      //position: relative;
  }
 
@@ -190,7 +192,7 @@
  }
 
  .byline-name {
-     color: black;
+     color: @colorBody;
      font-weight: bold;
      text-decoration: none;
  }
@@ -206,16 +208,22 @@
 
  /* Footer */
  .outer-wrap-footer {
-     background-color: #303030;
-     color: white;
+     background-color: @bgColorHtml;
+     color: colorBody;
  }
 
  .footer-column {
      #desinax-vgrid.column(@columns / 3);
+     color: #fff;
+ }
+
+ .footer-column-2,
+ .footer-column-3 {
+     #desinax-vgrid.push(1);
  }
 
  .site-footer {
      #desinax-vgrid.column(@columns);
      text-align: center;
-
+     color: #fff;
  }
