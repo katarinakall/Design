@@ -5030,7 +5030,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Capriola', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -5310,14 +5310,14 @@ hr::after {
 }
 html {
   overflow-y: scroll;
-  background-color: #CC2286;
+  background-color: black;
 }
 body {
   margin: 0;
   padding: 0;
-  color: black;
-  background-color: #4EFF4B;
-  font: 16px/1.5 'Capriola', sans-serif;
+  color: #1F8E22;
+  background-color: black;
+  font: 16px/1.5 'Work Sans', sans-serif;
 }
 img {
   max-width: 100%;
@@ -5372,6 +5372,7 @@ img {
   width: 101.04166667%;
   margin-left: -0.52083333%;
   margin-right: -0.52083333%;
+  margin-bottom: 12px;
 }
 .row::after {
   content: "";
@@ -5382,6 +5383,7 @@ img {
   margin-right: auto;
   margin-left: auto;
   max-width: 1100px;
+  margin-bottom: 24px;
 }
 .vgrid .inner-wrap {
   background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
@@ -5439,7 +5441,7 @@ img {
   display: none;
 }
 .site-logo-text a {
-  color: black;
+  color: #1F8E22;
   font-weight: bold;
   text-decoration: none;
   font-size: 2.5rem;
@@ -5449,7 +5451,7 @@ img {
   font-size: 1.2rem;
 }
 .my-navbar > li > ul {
-  background-color: #4EFF4B;
+  background-color: black;
   opacity: 0.8;
 }
 .region-breadcrumb {
@@ -5473,7 +5475,7 @@ img {
 }
 /* Main and sidebars */
 .outer-wrap-main {
-  background-image: linear-gradient(#4EFF4B, #CC2286);
+  background-color: black;
 }
 .region-main {
   display: inline;
@@ -5530,6 +5532,9 @@ img {
 }
 .region-sidebar-right.has-sidebar-left.has-sidebar-right.has-sidebar {
   margin-left: 4.6875%;
+}
+a {
+  color: #859500;
 }
 /**
 * Responsive 1, 2, 3
@@ -5595,9 +5600,9 @@ img {
 }
 /* Byline */
 .author-byline {
-  border: solid 1px black;
+  border: solid 1px #1F8E22;
   background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  color: #1F8E22;
 }
 .author-byline::after {
   content: "";
@@ -5605,7 +5610,7 @@ img {
   clear: both;
 }
 .byline-name {
-  color: #fff;
+  color: #1F8E22;
   font-weight: bold;
   text-decoration: none;
 }
@@ -5617,7 +5622,7 @@ img {
 }
 /* Footer */
 .outer-wrap-footer {
-  background-color: #CC2286;
+  background-color: black;
   color: colorBody;
 }
 .footer-column {
@@ -5626,7 +5631,7 @@ img {
   width: 32.29166667%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
-  color: #fff;
+  color: #1F8E22;
 }
 .footer-column-2,
 .footer-column-3 {
@@ -5639,7 +5644,7 @@ img {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
   text-align: center;
-  color: #fff;
+  color: #1F8E22;
 }
 /**
  * Layout for responsive style through media queries.
@@ -5723,18 +5728,18 @@ img {
 .regions .region-footer-column-1,
 .regions .region-footer-column-2,
 .regions .region-footer-column-3 {
-  background-color: #4EFF4B;
+  background-color: black;
   border: 1px solid #6cbac4;
-  color: black;
+  color: #1F8E22;
 }
 /**
  * My own settings, not currently in their own module.
  */
 @font-face {
-  font-family: 'Capriola';
+  font-family: 'Work Sans';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Capriola Regular'), local('Capriola-Regular'), url(https://fonts.gstatic.com/s/capriola/v7/wXKoE3YSppcvo1PDlk_7JeQ.ttf) format('truetype');
+  src: local('Work Sans'), local('WorkSans-Regular'), url(https://fonts.gstatic.com/s/worksans/v5/QGYsz_wNahGAdqQ43Rh_fKDs.ttf) format('truetype');
 }
 @accent BgColor #fff;

@@ -5164,7 +5164,7 @@ img {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .site-logo-text > a {
     font-size: 2rem;
   }

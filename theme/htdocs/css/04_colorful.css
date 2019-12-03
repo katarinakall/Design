@@ -5030,7 +5030,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Capriola', sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -5317,7 +5317,7 @@ body {
   padding: 0;
   color: black;
   background-color: #4EFF4B;
-  font: 16px/1.5 'Roboto', sans-serif;
+  font: 16px/1.5 'Capriola', sans-serif;
 }
 img {
   max-width: 100%;
@@ -5372,7 +5372,6 @@ img {
   width: 101.04166667%;
   margin-left: -0.52083333%;
   margin-right: -0.52083333%;
-  margin-bottom: 12px;
 }
 .row::after {
   content: "";
@@ -5383,7 +5382,6 @@ img {
   margin-right: auto;
   margin-left: auto;
   max-width: 1100px;
-  margin-bottom: 24px;
 }
 .vgrid .inner-wrap {
   background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
@@ -5474,6 +5472,9 @@ img {
   text-align: right;
 }
 /* Main and sidebars */
+.outer-wrap-main {
+  background-image: linear-gradient(#4EFF4B, #CC2286);
+}
 .region-main {
   display: inline;
   float: left;
@@ -5595,7 +5596,8 @@ img {
 /* Byline */
 .author-byline {
   border: solid 1px black;
-  background-color: #4EFF4B;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
 }
 .author-byline::after {
   content: "";
@@ -5603,7 +5605,7 @@ img {
   clear: both;
 }
 .byline-name {
-  color: black;
+  color: #fff;
   font-weight: bold;
   text-decoration: none;
 }
@@ -5666,7 +5668,7 @@ img {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .site-logo-text > a {
     font-size: 2rem;
   }
@@ -5729,10 +5731,10 @@ img {
  * My own settings, not currently in their own module.
  */
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Capriola';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+  src: local('Capriola Regular'), local('Capriola-Regular'), url(https://fonts.gstatic.com/s/capriola/v7/wXKoE3YSppcvo1PDlk_7JeQ.ttf) format('truetype');
 }
 @accent BgColor #fff;
