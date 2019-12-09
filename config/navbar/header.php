@@ -64,6 +64,11 @@ return [
                         "url" => "rapport/fargschema",
                         "title" => "Rapport om färgschema",
                     ],
+                    [
+                        "text" => "Laddningstid",
+                        "url" => "rapport/laddningstid",
+                        "title" => "Rapport om Laddningstid",
+                    ],
                 ],
             ],
         ],
@@ -86,6 +91,11 @@ return [
             "text" => "Test",
             "url" => "test",
             "title" => "Lek runt med olika konstruktioner.",
+        ],
+        [
+            "text" => "Blogg",
+            "url" => "blogg",
+            "title" => "Min blogg.",
         ],
     ],
 ];
