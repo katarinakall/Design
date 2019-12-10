@@ -7,7 +7,7 @@ published: "2019-12-09"
 ---
 Balansera stenar
 ==================================
-<figure class="figure left">
+<figure class="figure left w33">
     <img src="image/balanserade_stenar.jpg?w=300&sharpen" alt="balanserade stenar">
     <figcaption>
         <p>Stenar som balanserats på varandra.</p>
@@ -25,14 +25,14 @@ Den tredje lille grisen byggde sig ett hus av stenar och murbruk. Han lade på e
 
 <!--more-->
 
-<figure class="figure right">
+<figure class="figure center">
     <img src="image/balanserade_stenar.jpg?area=25,0,30,0" alt="balanserade stenar">
     <figcaption>
         <p>Stenar som balanserats på varandra.</p>
     </figcaption>
 </figure>
 
-<figure class="figure right">
+<figure class="figure right w50">
     <img src="image/balanserade_stenar.jpg?area=22,15,5,0&w=400&sharpen&f=grayscale" alt="balanserade stenar">
     <figcaption>
         <p>Stenar som balanserats på varandra.</p>
@@ -45,7 +45,7 @@ Han knackade försiktigt och ropade: "God dag på dig lilla gris. Får jag stiga
 
 "Öppna dörren"! skrek vargen. "Aldrig i livet"! svarade den lilla grisen. "Det ska du få ångra", sa vargen. "Jag tänker blåsa så hårt på ditt halmhus att det rasar, och sedan äter jag upp er".
 
-<figure class="figure left">
+<figure class="figure left w50">
     <img src="image/balanserade_stenar.jpg?area=25,30,30,0&w=400&sharpen" alt="balanserade stenar">
     <figcaption>
         <p>Stenar som balanserats på varandra.</p>

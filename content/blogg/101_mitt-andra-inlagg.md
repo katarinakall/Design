@@ -21,7 +21,7 @@ Harklöver
 Blommorna på bilden heter Harklöver. På [Wikipedia](https://sv.wikipedia.org/wiki/Harkl%C3%B6ver) kan man läsa följande om Harklöver:
 >"Harklöver (Trifolium arvense) är en ettårig, mjukt hårig ört, i familjen ärtväxter, med upprätt och vanligen rikt grenig stjälk som kan bli upp till tre decimeter hög. Bladen är trefingrade med avlånga småblad. Harklöver blommar från juni till augusti. Blomhuvudena är avlånga gråludna och skaftade. Fodret är långhårigt och har långa foderflikar."
 
-<figure class="figure left">
+<figure class="figure left w33">
     <img src="image/hyppeln_ang.jpg?w=300&crop=300,350,370,340" alt="äng på hyppeln">
     <figcaption>
         <p>Blommor på Hyppeln.</p>

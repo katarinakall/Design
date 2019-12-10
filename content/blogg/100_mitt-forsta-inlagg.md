@@ -19,7 +19,7 @@ I Göteborgs skärgård ligger ett litet paradis vid namn Hyppeln. Denna sommar 
 <!--more-->
 
 
-<figure class="figure right">
+<figure class="figure right w50">
     <img src="image/hyppeln.jpg?w=400&sharpen" alt="hyppeln">
     <figcaption>
         <p>En sommardag på Hyppeln.</p>
@@ -36,7 +36,7 @@ Hyppeln är kanske mest känd för svenska folket för sin roll i en tragedi som
 Offerkast  {#anchor-hit}
 -----------------------------------
 
-<figure class="figure left">
+<figure class="figure left w50">
     <img src="image/hyppeln.jpg?area=30,30,0,0&q=90" alt="hyppeln">
     <figcaption>
         <p>Vägen till offerkastet.</p>
@@ -46,7 +46,7 @@ Offerkast  {#anchor-hit}
 
 Längre ner på denna väg så kommer man till ett av Hyppelns två offerkast. I det offerkast som man hittar där ska enligt muntlig tradition Snus-Nils ligga begraven. Han ska ha hittas drunknad och ilandfluten på stranden intill. Offerkast eller våle som det kallades förr, är benämningen på en plats där någon har dött en oväntad eller våldsam död. För att skydda sig för fler olyckshändelser eller för att försäkra sig om att den omkomne inte går igen var påbudet att kast en sten, pinne eller ett mynt på platsen
 
-<figure class="figure left">
+<figure class="figure left w33">
     <img src="image/hyppeln.jpg?f=grayscale&crop=400,200,600,1150" alt="hyppeln">
     <figcaption>
         <p>En sommardag på Hyppeln.</p>
