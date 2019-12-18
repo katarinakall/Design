@@ -5316,8 +5316,11 @@ body {
   margin: 0;
   padding: 0;
   color: black;
-  background-color: #fff;
+  background-image: url("../img/leather.jpg");
   font: 16px/1.5 'Roboto', sans-serif;
+}
+.outer-wrap {
+  background-color: #fff;
 }
 img {
   max-width: 100%;

@@ -5316,8 +5316,11 @@ body {
   margin: 0;
   padding: 0;
   color: #303030;
-  background-color: #ddd;
+  background-image: url("../img/leather.jpg");
   font: 16px/1.5 'Source Sans Pro', sans-serif;
+}
+.outer-wrap {
+  background-color: #ddd;
 }
 img {
   max-width: 100%;

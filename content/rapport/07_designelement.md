@@ -20,11 +20,14 @@ Fäger - jag har valt att använda färger som jag fått fram genom att låta Ad
 </tr>
 </table>
 
+Jag har även lagt till ett filter över flash bilden för att minska kontrasterna på sidan.
+
 Typografi - jag har adderat en till font för att få in rundare former och på så vis försöka få till en annan känsla på sidan.
 
 Rymd - jag har förökt att skapa utrymme runt samtliga element för att få en luftig sida.
 
 Streck - genom att placera ut mitt innehåll utefter ett grid har jag skapat både horisontella och vertikala linjer i form av negativt utrymme. Jag har även en del traditionelle linjer på sidan i form av understrykningar av rubriker samt olika färger på navbar, body och footer.
------------------------
+
+
 
 Skriven av: Katarina Käll

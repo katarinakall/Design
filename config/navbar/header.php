@@ -74,6 +74,11 @@ return [
                         "url" => "rapport/designprincip",
                         "title" => "Rapport om Designprinciper",
                     ],
+                    [
+                        "text" => "Designelement",
+                        "url" => "rapport/designelement",
+                        "title" => "Tema designelement",
+                    ],
                 ],
             ],
         ],
