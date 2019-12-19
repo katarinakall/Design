@@ -1,7 +1,7 @@
 /*!
- * Stylesheet for design kmom04.
+ * Stylesheet for design kmom06.
  *
- * This stylesheet is for the design course and kmom04 where we use LESS.
+ * This stylesheet is for the design course and kmom06 where we use LESS.
  */
 /**
  * Import mixins.
@@ -5030,7 +5030,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -5315,8 +5315,9 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: #1F8E22;
-  font: 16px/1.5 'Work Sans', sans-serif;
+  color: #F24B6A;
+  background-color: black;
+  font: 16px/1.5 'Roboto', sans-serif;
 }
 img {
   max-width: 100%;
@@ -5354,6 +5355,134 @@ img {
      */
 }
 /**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+/**
+ * Figure with ASCIINEMA
+ */
+/**
+ * Figure with Codepen
+ */
+/** --------------------------------------------------------------
+ * Figure through .figure
+ */
+figure.figure,
+figure.asciinema,
+figure.codepen,
+figure.figure-codepen {
+  display: table;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  /* Chrome shinks images in td */
+  /* Position the images */
+}
+figure.figure img {
+  max-width: 100%;
+  display: block;
+}
+figure.figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  padding-top: 12px;
+}
+figure.figure figcaption p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+}
+figure.figure td img {
+  max-width: none;
+}
+figure.figure.center {
+  clear: both;
+  margin: auto;
+}
+figure.figure.center figcaption {
+  text-align: center;
+}
+figure.figure.left {
+  float: left;
+  margin-right: 0.5em;
+}
+figure.figure.right {
+  float: right;
+  margin-left: 0.5em;
+}
+@media screen and (max-width: 963px) {
+  figure.figure.left.w67,
+  figure.figure.right.w67 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w67 img,
+  figure.figure.right.w67 img {
+    width: 962.5px;
+  }
+}
+@media screen and (max-width: 733px) {
+  figure.figure.left.w50,
+  figure.figure.right.w50 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w50 img,
+  figure.figure.right.w50 img {
+    width: 733.33333333px;
+  }
+}
+@media screen and (max-width: 688px) {
+  figure.figure.left.w40,
+  figure.figure.right.w40 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w40 img,
+  figure.figure.right.w40 img {
+    width: 687.5px;
+  }
+}
+@media screen and (max-width: 550px) {
+  figure.figure.left.w33,
+  figure.figure.right.w33 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w33 img,
+  figure.figure.right.w33 img {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 367px) {
+  figure.figure.left.w25,
+  figure.figure.right.w25 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w25 img,
+  figure.figure.right.w25 img {
+    width: 366.66666667px;
+  }
+}
+figure.asciinema {
+  display: block;
+}
+figure.asciinema figcaption {
+  display: block;
+}
+figure.asciinema .asciicast {
+  margin: 0 !important;
+}
+figure.codepen,
+figure.figure-codepen {
+  width: 100%;
+}
+/**
  * Layout style for general structure of header, navbar, main, footer
  * and other regions of the page including route specific styles.
  */
@@ -5363,6 +5492,20 @@ img {
 /**
  * Variables
  */
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dancingscript/v13/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BMSo3Sup5.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dancingscript/v13/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7B1i03Sup5.ttf) format('truetype');
+}
 /**
  * General layout
  */
@@ -5436,18 +5579,25 @@ img {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
 }
-.site-logo {
+.region-flash > img {
+  opacity: 0.5;
+}
+.site-logo,
+.site-logo-text-icon {
   display: none;
 }
 .site-logo-text a {
-  color: #1F8E22;
+  color: #F24B6A;
   font-weight: bold;
   text-decoration: none;
   font-size: 2.5rem;
+  font-family: 'Dancing Script', cursive;
+  margin-left: 8.85416667%;
 }
 .my-navbar {
   display: inline;
   font-size: 1.2rem;
+  font-family: 'Dancing Script', cursive;
 }
 .my-navbar > li > ul {
   background-color: black;
@@ -5472,10 +5622,10 @@ img {
   margin-left: 50.52083333%;
   text-align: right;
 }
-/* Main and sidebars */
-.outer-wrap-main {
+.inner-wrap-header {
   background-color: black;
 }
+/* Main and sidebars */
 .region-main {
   display: inline;
   float: left;
@@ -5531,9 +5681,6 @@ img {
 }
 .region-sidebar-right.has-sidebar-left.has-sidebar-right.has-sidebar {
   margin-left: 4.6875%;
-}
-a {
-  color: #859500;
 }
 /**
 * Responsive 1, 2, 3
@@ -5594,14 +5741,163 @@ a {
   display: block;
   clear: both;
 }
+h1,
+h3,
+h2,
+h4,
+h1 > a,
+.site-logo-text a {
+  --color1: #F24B6A;
+  --color2: #FF7D93;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  border-bottom: none;
+  background: repeating-linear-gradient(45deg, var(--color1), var(--color1) 30px, var(--color2) 30px, var(--color2) 60px);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  animation: 40s linear 0s infinite move;
+}
+@keyframes move {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: 1000px;
+  }
+}
+ul > li > a {
+  text-decoration: none;
+  color: #F24B6A;
+}
+a {
+  color: #FFABB9;
+}
 .right {
   float: right;
 }
+/**
+*Responsive images in blog
+*/
+@media screen and (max-width: 733px) {
+  .left.w50,
+  .right.w50 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  .left.w50 img,
+  .right.w50 img {
+    width: 733.33333333px;
+  }
+}
+figure.figure,
+figure.asciinema,
+figure.codepen,
+figure.figure-codepen {
+  display: table;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  /* Chrome shinks images in td */
+  /* Position the images */
+}
+figure.figure img {
+  max-width: 100%;
+  display: block;
+}
+figure.figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  padding-top: 12px;
+}
+figure.figure figcaption p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+}
+figure.figure td img {
+  max-width: none;
+}
+figure.figure.center {
+  clear: both;
+  margin: auto;
+}
+figure.figure.center figcaption {
+  text-align: center;
+}
+figure.figure.left {
+  float: left;
+  margin-right: 0.5em;
+}
+figure.figure.right {
+  float: right;
+  margin-left: 0.5em;
+}
+@media screen and (max-width: 840px) {
+  figure.figure.left.w67,
+  figure.figure.right.w67 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w67 img,
+  figure.figure.right.w67 img {
+    width: 840px;
+  }
+}
+@media screen and (max-width: 640px) {
+  figure.figure.left.w50,
+  figure.figure.right.w50 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w50 img,
+  figure.figure.right.w50 img {
+    width: 640px;
+  }
+}
+@media screen and (max-width: 600px) {
+  figure.figure.left.w40,
+  figure.figure.right.w40 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w40 img,
+  figure.figure.right.w40 img {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 480px) {
+  figure.figure.left.w33,
+  figure.figure.right.w33 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w33 img,
+  figure.figure.right.w33 img {
+    width: 480px;
+  }
+}
+@media screen and (max-width: 320px) {
+  figure.figure.left.w25,
+  figure.figure.right.w25 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w25 img,
+  figure.figure.right.w25 img {
+    width: 320px;
+  }
+}
 /* Byline */
 .author-byline {
-  border: solid 1px #1F8E22;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #1F8E22;
+  border: solid 1px #F24B6A;
+  background-color: #FFFFFF;
 }
 .author-byline::after {
   content: "";
@@ -5609,15 +5905,22 @@ a {
   clear: both;
 }
 .byline-name {
-  color: #1F8E22;
+  color: #F24B6A;
   font-weight: bold;
   text-decoration: none;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5em;
 }
 .left {
   float: left;
 }
-.left > figcaption {
+.left > img {
+  padding: 10px;
+}
+figcaption {
   font-style: oblique;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.3rem;
 }
 /* Footer */
 .outer-wrap-footer {
@@ -5630,7 +5933,7 @@ a {
   width: 32.29166667%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
-  color: #1F8E22;
+  color: #F24B6A;
 }
 .footer-column-2,
 .footer-column-3 {
@@ -5643,7 +5946,7 @@ a {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
   text-align: center;
-  color: #1F8E22;
+  color: #F24B6A;
 }
 /**
  * Layout for responsive style through media queries.
@@ -5727,18 +6030,17 @@ a {
 .regions .region-footer-column-1,
 .regions .region-footer-column-2,
 .regions .region-footer-column-3 {
-  background-color: black;
+  background-color: #FF7D93;
   border: 1px solid #6cbac4;
-  color: #1F8E22;
+  color: #F24B6A;
 }
 /**
  * My own settings, not currently in their own module.
  */
 @font-face {
-  font-family: 'Work Sans';
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Work Sans'), local('WorkSans-Regular'), url(https://fonts.gstatic.com/s/worksans/v5/QGYsz_wNahGAdqQ43Rh_fKDs.ttf) format('truetype');
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
 }
-@accent BgColor #fff;
